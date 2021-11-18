@@ -1,5 +1,5 @@
 class Proyect < ApplicationRecord
-    validates :tittle, presence: true
+    validates :name, presence: true
     validates :description, presence: true
-    enum status: [:Propuesta, :En_progreso, :Terminado]
+    enum info: [:Propuesta, :En_progreso, :Terminado]
 end
